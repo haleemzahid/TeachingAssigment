@@ -10,5 +10,8 @@ namespace TeachingAssigment.Models
         public int DayId { get; set; }
 
         public string Name { get; set; }
+        public int ProfessorInfoId { get; set; }
+        public ProfessorInfo ProfessorInfo { get; set; }
+     
     }
 }

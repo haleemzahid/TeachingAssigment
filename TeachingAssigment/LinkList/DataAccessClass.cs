@@ -6,7 +6,7 @@ using TeachingAssigment.Models;
 
 namespace TeachingAssigment.LinkList
 {
-    public  class DataAccessClass
+    public static  class DataAccessClass
     {
 
         public static LinkedList<ProfessorInfo> data = new LinkedList<ProfessorInfo>();

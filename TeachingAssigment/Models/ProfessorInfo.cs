@@ -13,11 +13,9 @@ namespace TeachingAssigment.Models
         public string CourseDay { get; set; }
         public string CourseTime { get; set; }
         public string LectureName { get; set; }
+        public ICollection<Day> Days { get; set; }
+        public ICollection<Time> Times { get; set; }
 
-        public int DayId { get; set; }
-        public Day Day { get; set; }
-        public int TimeId { get; set; }
-        public Time Time { get; set; }
 
     }
 }

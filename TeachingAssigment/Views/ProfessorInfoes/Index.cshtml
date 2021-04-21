@@ -27,12 +27,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.LectureName)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Day)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Time)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -54,17 +48,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.LectureName)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Day.DayId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Time.TimeId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ProfessorInfoId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProfessorInfoId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProfessorInfoId">Delete</a>
-            </td>
+           
         </tr>
 }
     </tbody>
