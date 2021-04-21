@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TeachingAssigment.Models;
+using SapnaTeachingAssignment.Models;
 
-namespace TeachingAssigment.LinkList
+namespace SapnaTeachingAssignment.LinkList
 {
-    public static  class DataAccessClass
+    public static  class ProfList
     {
 
         public static LinkedList<ProfessorInfo> data = new LinkedList<ProfessorInfo>();

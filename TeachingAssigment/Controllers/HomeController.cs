@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using TeachingAssigment.Models;
+using SapnaTeachingAssignment.Models;
 
-namespace TeachingAssigment.Controllers
+namespace SapnaTeachingAssignment.Controllers
 {
     public class HomeController : Controller
     {

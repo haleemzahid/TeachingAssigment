@@ -1,6 +1,6 @@
 using System;
 
-namespace TeachingAssigment.Models
+namespace SapnaTeachingAssignment.Models
 {
     public class ErrorViewModel
     {

@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
-using TeachingAssigment.LinkList;
-using TeachingAssigment.Models;
+using SapnaTeachingAssignment.LinkList;
+using SapnaTeachingAssignment.Models;
 
-namespace TeachingAssigment.Controllers
+namespace SapnaTeachingAssignment.Controllers
 {
     public class ProfessorInfoesController : Controller
     {
@@ -46,7 +46,7 @@ namespace TeachingAssigment.Controllers
         {
 
 
-            var data = LinkList.DataAccessClass.data.ToList();
+            var data = LinkList.ProfList.data.ToList();
 
 
 
@@ -79,7 +79,7 @@ namespace TeachingAssigment.Controllers
             }
             else
             {
-                DataAccessClass.data.AddLast(professorInfo);
+                ProfList.data.AddLast(professorInfo);
             }
             return View(professorInfo);
         }
@@ -87,7 +87,7 @@ namespace TeachingAssigment.Controllers
         public bool ValidationProfessor(ProfessorInfo professorInfo)
         {
 
-            var data = LinkList.DataAccessClass.data.ToList().Where(x=>x.ProfessorInfoId==professorInfo.ProfessorInfoId).ToList();
+            var data = LinkList.ProfList.data.ToList().Where(x=>x.ProfessorInfoId==professorInfo.ProfessorInfoId).ToList();
 
             if (data.Count > 4)
             {

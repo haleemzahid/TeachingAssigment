@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace TeachingAssigment
+namespace SapnaTeachingAssignment
 {
     public class Startup
     {
